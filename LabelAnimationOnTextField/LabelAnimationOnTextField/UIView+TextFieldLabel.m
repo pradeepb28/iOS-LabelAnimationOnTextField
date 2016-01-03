@@ -10,16 +10,23 @@
 @implementation UIView (TextFieldLabel)
 
 -(UILabel *)animateLabelTop:(UITextField *)textField{
-//    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(textField.frame.origin.x, textField.frame.origin.y-10, textField.frame.size.width, 10)];
-//    label.font=[label.font fontWithSize:8];
-//    label.alpha=0.5;
-//    label.text=textField.placeholder;
-    return [self animateLabelTop:textField withFontSize:8];
+    return [self animateLabelTop:textField withFontName:@"System" withFontSize:8 withColorRed:0.0 andGreen:0.0 andBlue:0.0];
 }
--(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)fontSize{
+-(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)size{
+       return [self animateLabelTop:textField withFontName:@"System" withFontSize:size withColorRed:0.0 andGreen:0.0 andBlue:0.0];
+}
+-(UILabel *)animateLabelTop:(UITextField *)textField withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue{
+    return [self animateLabelTop:textField withFontName:@"System" withFontSize:8 withColorRed:red andGreen:green andBlue:blue];
+}
+-(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue{
+    return [self animateLabelTop:textField withFontName:fontName withFontSize:8 withColorRed:red andGreen:green andBlue:blue];
+}
+-(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName withFontSize:(CGFloat)fontSize withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue{
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(textField.frame.origin.x, textField.frame.origin.y-10, textField.frame.size.width, 10)];
+    label.font=[UIFont fontWithName:fontName size:fontSize];
     label.font=[label.font fontWithSize:fontSize];
-    label.alpha=0.5;
+    label.numberOfLines=1;
+    label.textColor=[UIColor colorWithRed:red green:green blue:blue alpha:0.5];
     label.text=textField.placeholder;
     return label;
 }
