@@ -10,5 +10,5 @@
 
 @interface UIView (TextFieldLabel)
 -(UILabel *)animateLabelTop:(UITextField *)textField;
-
+-(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)fontSize;
 @end
