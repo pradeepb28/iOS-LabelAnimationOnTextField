@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (TextFieldLabel)
+// animates the label to top with default values.
 -(UILabel *)animateLabelTop:(UITextField *)textField;
 -(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)size;
 -(UILabel *)animateLabelTop:(UITextField *)textField withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
