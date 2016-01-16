@@ -20,6 +20,9 @@
 -(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)size{
        return [self animateLabelTop:textField withFontName:FONT_NAME withFontSize:size withColorRed:RED andGreen:GREEN andBlue:BLUE];
 }
+-(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName{
+    return [self animateLabelTop:textField withFontName:fontName withFontSize:FONT_SIZE withColorRed:RED andGreen:GREEN andBlue:BLUE];
+}
 -(UILabel *)animateLabelTop:(UITextField *)textField withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue{
     return [self animateLabelTop:textField withFontName:FONT_NAME withFontSize:FONT_SIZE withColorRed:red andGreen:green andBlue:blue];
 }
