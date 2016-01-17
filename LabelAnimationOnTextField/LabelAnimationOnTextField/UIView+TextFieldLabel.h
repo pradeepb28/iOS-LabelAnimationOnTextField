@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (TextFieldLabel)
--(UILabel *)animateLabelTop:(UITextField *)textField;
--(UILabel *)animateLabelTop:(UITextField *)textField withFontSize:(CGFloat)size;
--(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName;
--(UILabel *)animateLabelTop:(UITextField *)textField withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
--(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
--(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName withFontSize:(CGFloat)fontSize withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
-
++(UILabel *)animatePBLabel:(UITextField *)textField;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withFontSize:(CGFloat)size;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withFontName:(NSString *)fontName;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withFontName:(NSString *)fontName withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
++(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position  withFontName:(NSString *)fontName withFontSize:(CGFloat)fontSize withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
 
 @end
