@@ -32,14 +32,14 @@
 }
 -(UILabel *)animateLabelTop:(UITextField *)textField withFontName:(NSString *)fontName withFontSize:(CGFloat)fontSize withColorRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue{
     if (textField.tag!=100) {
-    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(textField.frame.origin.x, textField.frame.origin.y, textField.frame.size.width, 10)];
+   UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(textField.frame.origin.x, textField.frame.origin.y, textField.frame.size.width, 10)];
     label.userInteractionEnabled=NO;
-        textField.tag=100;
+    textField.tag=100;
     label.font=[UIFont fontWithName:fontName size:fontSize];
     label.font=[label.font fontWithSize:fontSize];
     label.numberOfLines=1;
     label.baselineAdjustment=UIBaselineAdjustmentAlignBaselines;
-    label.textColor=[UIColor colorWithRed:red green:green blue:blue alpha:0.5];
+    label.textColor=[UIColor colorWithRed:red green:green blue:blue alpha:0.75];
     label.text=textField.placeholder;
     [UIView animateWithDuration:0.10 animations:^{
             label.frame=CGRectMake(textField.frame.origin.x, textField.frame.origin.y-10, textField.frame.size.width, 10);
@@ -50,5 +50,4 @@
     }
     return nil;
 }
-
 @end
