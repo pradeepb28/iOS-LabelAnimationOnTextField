@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (TextFieldLabel)
-+(UILabel *)animatePBLabel:(UITextField *)textField;
+@interface UITextField (PBLabel)
+//+(UILabel *)animatePBLabel:(UITextField *)textField;
 +(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position;
 +(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withFontSize:(CGFloat)size;
 +(UILabel *)animatePBLabel:(UITextField *)textField withAlignment:(NSString *)align andPosition:(NSString *)position withFontName:(NSString *)fontName;
