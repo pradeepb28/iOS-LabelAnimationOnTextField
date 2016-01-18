@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pradeep Burugu. All rights reserved.
 //
 
-#import "UIView+TextFieldLabel.h"
+#import "UITextField+PBLabel.h"
 #define FONT_NAME @"System"
 #define FONT_SIZE 8
 #define RED 0.0/255.0
