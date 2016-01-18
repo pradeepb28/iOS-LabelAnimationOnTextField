@@ -14,7 +14,7 @@
 #define BLUE 0.0/255.0
 #define ALIGNMENT @"LEFT"
 #define POSITION @"TOP"
-@implementation UIView (TextFieldLabel)
+@implementation UITextField (PBLabel)
 +(UILabel *)animatePBLabel:(UITextField *)textField{
         return [self animatePBLabel:textField withAlignment:ALIGNMENT andPosition:POSITION withFontName:FONT_NAME withFontSize:FONT_SIZE withColorRed:RED andGreen:GREEN andBlue:BLUE];
 }
